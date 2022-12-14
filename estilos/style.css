@@ -1,14 +1,58 @@
 @charset "UTF-8";
 /*
-     Paleta de cores 1:
+     Paleta de cores:
      #FAF8F1 
      #FAEAB1
      #E5BA73
      #C58940
- OU
-     Paleta de cores 2:
-     #536162
-     #424642
-     #C06014
 */
 
+* {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+}
+
+body, html {
+     background-color: #E5BA73;
+     height: 100vh;
+     width: 100vw;
+}
+
+main {
+     position: relative;
+     height: 100vh;
+     width: 100vw;
+}
+
+section#login {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     overflow: hidden;
+
+     background-color: #FAF8F1;
+     width: 250px; 
+     height: 500px;
+     border-radius: 20px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.220);
+
+     transition: width .3s, height .3s;
+     transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+     display: block;
+     background: #FAEAB1 url(../imagens/login1.jpg) no-repeat;
+     background-size: cover;
+     height: 200px;
+}
+
+section#login > div#formulario {
+     display: block;
+     padding: 10px;
+
+}
